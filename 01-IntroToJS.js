@@ -1,4 +1,4 @@
-console.log("Hello World")
+console.log("This program adds 1,2 and 4")
 
 function add3numbers(a,b,c)
 {
