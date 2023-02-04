@@ -1,0 +1,1 @@
+// NNSSBBU (null ,number , symbol , string, bigint, boolean , undefined)
