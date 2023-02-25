@@ -10,8 +10,8 @@
 <h1 id ="main" style="margin:50px auto ; width:300px; "></h1>
 
     <script type="text/javascript">
-        var a = 1;
-        var b = 3;
+        var a = 3;
+        var b = 20;
         var sum = a+b;
         var z = a != b;
         document.getElementById('main').innerHTML = z;
@@ -19,8 +19,10 @@
         var x = (a % 2==1 && b % 2 == 1);
         alert(x);
 
-        var y = a>b? "A is greater":"B is greater";
+        var y = a>b? "A is greater<br/>":"B is greater<br/>";
         document.write(y);
+
+        document.write( b %= a);
     </script>
     
 </body>
