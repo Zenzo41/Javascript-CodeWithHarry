@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <input type="number" name="val1" id ="val1" step="any" />
+   
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+
+    <input type="number" name="val2" id ="val2" step="any" />
+    <br/>
+    <button onclick="calculate()">Calculate</button>
+    <input type="number" name="result" id ="result" readonly=""/>
+    <br/>
+    <script type="text/javascript">
+        function calculate()
+        {
+            var val1 =document.getElementById('val1').value;
+            var val2 =document.getElementById('val2').value;
+            var operator = document.getElementById('operator').value;
+            
+            if(operator == '+')
+            {
+                var res = parseInt(val1)+parseInt(val2);
+            }
+
+            if(operator == '-')
+            {
+                var res = parseInt(val1)-parseInt(val2);
+            }
+
+            if(operator == '*')
+            {
+                var res = parseInt(val1)*parseInt(val2);
+            }
+
+            if(operator == '/')
+            {
+                var res = parseInt(val1)/parseInt(val2);
+            }
+            // setting 
+            document.getElementById('result').value = res;
+        }
+    </script>
+</body>
+</html>
