@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions related to array</title>
+</head>
+<body>
+    <h1 id="result" name="result"></h1>
+    <button onclick="push()">PUSH</button>
+    <button onclick="pop()">POP</button>
+    <button onclick="slice()">SLICE</button>
+    <button onclick="reverse()">REVERSE</button>
+    <button onclick="shift()">SHIFT</button>
+</body>
+<script>
+    var fruits = ['mango','peach','cherry','banana'];
+    var demo = fruits;
+    document.getElementById('result').innerText = demo;
+
+    function push()
+    {
+        var x = prompt("Enter a different vegetable or fruit name: ");
+        demo.push(x);
+        document.getElementById('result').innerText = demo;
+    }
+    function pop()
+    {
+        demo.pop();
+        document.getElementById('result').innerText = demo;
+    }
+    function slice()
+    {
+        var x = demo.slice(2);
+        document.getElementById('result').innerText = x;
+    }
+    function reverse()
+    {
+        demo.reverse();
+        document.getElementById('result').innerText = demo;
+    }
+    function shift()
+    {
+        var x = demo.shift();
+        document.getElementById('result').innerText = demo;
+    }
+
+</script>
+</html>
