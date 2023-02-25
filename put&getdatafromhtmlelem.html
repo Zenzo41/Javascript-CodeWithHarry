@@ -9,16 +9,21 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <div id="main">
+        <div class="main"> <!--  HTMLCOLLECTION[0]  meaning picks up O index class --> 
             <h1>Hello world</h1>
+        </div>
+        <div class="main"> <!--  HTMLCOLLECTION[1] -->
+            <h1>Hello </h1>
         </div>
         <script type="text/javascript" async defer>
             //GET data 
-            var value = document.getElementById("main"); // Shows the whole div 
-            console.log(value);
+            //var value = document.getElementById("main"); // Shows the whole div 
+            //console.log(value);
             //Post data
-            document.getElementById("main").innerHTML = "THIS HAS BEEN UPDATED";
-           
+            //document.getElementById("main").innerHTML = "THIS HAS BEEN UPDATED";
+            
+            var x =document.getElementsByClassName('main'); //RETURNS HTMLCOLLECTION[0]
+            console.log(x);
             
             
         </script>
