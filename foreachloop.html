@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Each Loop</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var cars = ['car1','car2','car3','car4'];
+    cars.forEach(car); // arrayvariable.forEachmethod(function to do sth)
+
+    function car(item,index,array)
+    {
+        //document.write(index+"=>"+item+"<br/>");//index for location of array values
+        array[index] = item+"0"; // change the value of every value by concatenating with 0
+       
+    }
+
+    cars.forEach(after);
+    function after(item,index)
+    {
+        document.write(index+"=>"+item+"<br/>");// display the changes value
+    }
+
+</script>
+</html>
