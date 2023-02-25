@@ -11,11 +11,19 @@
     <button onclick="greet()">
         Greet
     </button>
+    <div class="greet"> 
+
+    </div>
+
+    <div class="greet">
+
+    </div>
     <script type="text/javascript">
         function greet()
         {
             var name = document.getElementById('name').value;
             alert(name);
+            document.getElementsByClassName('greet')[0].innerHTML = "<h1>THIS IS GRENERATED BY CLICKING OF BUTTON</h1>"
         }
 
     </script>
